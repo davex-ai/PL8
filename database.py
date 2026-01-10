@@ -5,6 +5,9 @@ import os
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise Exception(".env not loaded or DATABASE_URL missing")
+print("DEBUG: Loaded DATABASE_URL:", DATABASE_URL)
 print("URL loaded:", DATABASE_URL)  # <-- debug line
 
 engine = create_engine(DATABASE_URL)
