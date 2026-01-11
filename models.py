@@ -29,3 +29,13 @@ class Product(Base):
     reviews = relationship("Review", back_populates="product")
 
 
+class Review(Base):
+    __tablename__ = "reviews"
+
+    id = Column(Integer, primary_key=True, index=True)
+    product_id = Column(Integer, ForeignKey("products.id"))
+    rating = Column(Integer)
+    comment = Column(String)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    product = relationship("Product", back_populates="reviews")
