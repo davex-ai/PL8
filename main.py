@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from sqlalchemy import text
 
 from db import engine, Base
+from models import Base
 import os
 import db
 
