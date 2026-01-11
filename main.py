@@ -9,9 +9,6 @@ import db
 app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
-print("API DATABASE_URL =", os.getenv("DATABASE_URL"))
-print("DATABASE MODULE FILE =", db.__file__)
-print("ENGINE URL =", engine.url)
 
 @app.get("/")
 def root():
