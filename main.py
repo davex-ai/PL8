@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from sqlalchemy import text
+
 from database import engine, Base
 import models
 import os
@@ -6,6 +8,7 @@ import os
 app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
+print("API DATABASE_URL =", os.getenv("DATABASE_URL"))
 
 @app.get("/")
 def root():
@@ -14,10 +17,9 @@ def root():
 
 @app.get("/db-test")
 def db_test():
-    print("API DATABASE_URL =", os.getenv("DATABASE_URL"))
 
     try:
         with engine.connect() as conn:
-            return {"db": "connected"}
+            return {"result": conn.execute(text("SELECT 1")).fetchall()}
     except Exception as e:
         return {"error": str(e)}
