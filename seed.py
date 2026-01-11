@@ -1,16 +1,9 @@
-import os
 from datetime import datetime
-from dotenv import load_dotenv
 from sqlalchemy.orm import Session
 
-# Import your models and DB setup
-from db import engine, SessionLocal
+from db import SessionLocal, engine
 from models import Base, Category, Product, Review
 
-# Load environment variables
-load_dotenv()
-
-# Sample product data (converted from JS)
 products = [
     {
         "name": "Fresh organic apple 1kg simla morning",
@@ -878,8 +871,7 @@ products = [
     }
 ]
 
-
-def get_or_create_category(db: Session, name: str) -> Category:
+def get_or_create_category(db: Session, name: str):
     category = db.query(Category).filter(Category.name == name).first()
     if not category:
         category = Category(name=name)
@@ -892,15 +884,9 @@ def get_or_create_category(db: Session, name: str) -> Category:
 def seed_products():
     db = SessionLocal()
     try:
-        # Ensure all unique categories exist
-        unique_categories = {item["category"] for item in products}
-        category_map = {}
-        for cat_name in unique_categories:
-            category = get_or_create_category(db, cat_name)
-            category_map[cat_name] = category.id
-
-        # Insert products and reviews
         for item in products:
+            category = get_or_create_category(db, item["category"])
+
             product = Product(
                 name=item["name"],
                 image=item["image"],
@@ -908,31 +894,28 @@ def seed_products():
                 stock=item["stock"],
                 rating=item["rating"],
                 num_reviews=item["num_reviews"],
-                category_id=category_map[item["category"]]
+                category_id=category.id
             )
             db.add(product)
-            db.flush()  # Get product.id without full commit
+            db.flush()
 
-            # Add reviews
-            for rev in item["reviews"]:
-                review = Review(
+            for r in item["reviews"]:
+                db.add(Review(
                     product_id=product.id,
-                    rating=rev["rating"],
-                    comment=rev["comment"],
+                    rating=r["rating"],
+                    comment=r["comment"],
                     created_at=datetime.utcnow()
-                )
-                db.add(review)
+                ))
 
         db.commit()
-        print(f"✅ Successfully seeded {len(products)} products with reviews.")
+        print("✅ Seed completed")
     except Exception as e:
         db.rollback()
-        print(f"❌ Seeding failed: {e}")
+        print("❌ Seed failed:", e)
     finally:
         db.close()
 
 
 if __name__ == "__main__":
-    # Optional: Create tables if not exists
     Base.metadata.create_all(bind=engine)
     seed_products()
