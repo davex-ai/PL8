@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from database import engine, Base
 import models
+import os
 
 app = FastAPI()
 
@@ -13,6 +14,8 @@ def root():
 
 @app.get("/db-test")
 def db_test():
+    print("API DATABASE_URL =", os.getenv("DATABASE_URL"))
+
     try:
         with engine.connect() as conn:
             return {"db": "connected"}
