@@ -1,0 +1,949 @@
+// products-seed.js
+
+const products = [
+  // ───────────────────────
+  // 🍌 FRUITS (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have images for these
+  {
+    name: "Fresh organic apple 1kg simla morning",
+    images: "/uploads/products/fresh-apples.png",
+    price: 120.25,
+    stock: 80,
+    category: "Fruits",
+    rating: 4.5,
+    numReviews: 45,
+    reviews: [
+      { rating: 5, comment: "Sweet and crisp.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Organic fresh venilla farm watermelon 5kg",
+    images: "/uploads/products/watermelon.png",
+    price: 50.30,
+    stock: 30,
+    category: "Fruits",
+    rating: 3.2,
+    numReviews: 32,
+    reviews: [
+      { rating: 4, comment: "Juicy and refreshing.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Fresh Organic Carrots Bundle",
+    images: "/uploads/products/carrots.png",
+    price: 8.99,
+    stock: 150,
+    category: "Fruits",
+    rating: 4.7,
+    numReviews: 65,
+    reviews: [
+      { rating: 5, comment: "Crunchy and sweet!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Rainbow Bell Peppers Trio",
+    images: "/uploads/products/bell-peppers.png",
+    price: 12.50,
+    stock: 80,
+    category: "Fruits",
+    rating: 4.5,
+    numReviews: 42,
+    reviews: [
+      { rating: 5, comment: "Vibrant and flavorful.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Ripe Bananas - 6 Pack",
+    images: "/uploads/products/bananas.png",
+    price: 5.99,
+    stock: 200,
+    category: "Fruits",
+    rating: 4.6,
+    numReviews: 120,
+    reviews: [
+      { rating: 5, comment: "Perfectly ripe every time.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Juicy Watermelon Slices",
+    images: "/uploads/products/watermelon-slices.png",
+    price: 7.50,
+    stock: 90,
+    category: "Fruits",
+    rating: 4.9,
+    numReviews: 110,
+    reviews: [
+      { rating: 5, comment: "So juicy and refreshing!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Sweet Yellow Mangoes - 4 Pack",
+    images: "/uploads/products/yellow-mangoes.png",
+    price: 14.99,
+    stock: 75,
+    category: "Fruits",
+    rating: 4.7,
+    numReviews: 60,
+    reviews: [
+      { rating: 5, comment: "Buttery and sweet.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Creamy Avocado - 3 Pack",
+    images: "/uploads/products/avocado.png",
+    price: 10.99,
+    stock: 85,
+    category: "Fruits",
+    rating: 4.9,
+    numReviews: 95,
+    reviews: [
+      { rating: 5, comment: "So creamy — perfect for toast!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Zesty Oranges - 6 Pack",
+    images: "/uploads/products/oranges.png",
+    price: 8.50,
+    stock: 110,
+    category: "Fruits",
+    rating: 4.7,
+    numReviews: 78,
+    reviews: [
+      { rating: 5, comment: "Bright and full of vitamin C.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Ruby Red Pomegranate",
+    images: "/uploads/products/pomegranate.png",
+    price: 9.50,
+    stock: 60,
+    category: "Fruits",
+    rating: 4.8,
+    numReviews: 45,
+    reviews: [
+      { rating: 5, comment: "Bursting with flavor!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Tropical Mango Juice Blend",
+    images: "/uploads/products/mango-juice.png",
+    price: 9.99,
+    stock: 100,
+    category: "Fruits",
+    rating: 4.8,
+    numReviews: 88,
+    reviews: [
+      { rating: 5, comment: "Refreshing and naturally sweet!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Spiky Durian Whole Fruit",
+    images: "/uploads/products/durian.png",
+    price: 25.00,
+    stock: 30,
+    category: "Fruits",
+    rating: 3.8,
+    numReviews: 25,
+    reviews: [
+      { rating: 5, comment: "Bold flavor — worth it!", createdAt: new Date() }
+    ]
+  },
+
+  // ───────────────────────
+  // 🍿 SNACKS (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have images for these
+  {
+    name: "Angie's Boomchickapop Sweet and Wonnies",
+    images: "/uploads/products/angies-pops.png",
+    price: 238.85,
+    stock: 120,
+    category: "Snacks",
+    rating: 4.6,
+    numReviews: 85,
+    reviews: [
+      { rating: 5, comment: "Addictive snack!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Blue Diamond Almonds Lightly Salted",
+    images: "/uploads/products/blue-diamond-almonds.png",
+    price: 238.85,
+    stock: 120,
+    category: "Snacks",
+    rating: 4.8,
+    numReviews: 88,
+    reviews: [
+      { rating: 5, comment: "Perfect crunchy snack.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Best snacks with hazel nut pack 200gm",
+    images: "/uploads/products/hazel-nuts.png",
+    price: 145.00,
+    stock: 60,
+    category: "Snacks",
+    rating: 5.0,
+    numReviews: 50,
+    reviews: [
+      { rating: 5, comment: "Best nuts I’ve ever had!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Sweet crunchy nut mix 250gm pack",
+    images: "/uploads/products/nut-mix.png",
+    price: 120.25,
+    stock: 50,
+    category: "Snacks",
+    rating: 5.0,
+    numReviews: 50,
+    reviews: [
+      { rating: 5, comment: "Perfect blend of crunch and flavor.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Dried Mango Slices Snack Pack",
+    images: "/uploads/products/dried-mango.png",
+    price: 11.50,
+    stock: 120,
+    category: "Snacks",
+    rating: 4.6,
+    numReviews: 70,
+    reviews: [
+      { rating: 5, comment: "Chewy, tangy, and addictive!", createdAt: new Date() }
+    ]
+  },
+
+  // 🖼️ NEW — need image: /uploads/products/popchips.png
+  {
+    name: "Popchips Original Sea Salt",
+    images: "/uploads/products/popchips.png",
+    price: 18.99,
+    stock: 90,
+    category: "Snacks",
+    rating: 4.5,
+    numReviews: 60,
+    reviews: [
+      { rating: 5, comment: "Light, airy, and satisfying!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/cheez-it.png
+  {
+    name: "Cheez-It Original Baked Snack",
+    images: "/uploads/products/cheez-it.png",
+    price: 16.50,
+    stock: 100,
+    category: "Snacks",
+    rating: 4.7,
+    numReviews: 80,
+    reviews: [
+      { rating: 5, comment: "Cheesy, crunchy, can’t stop eating!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/oreos.png
+  {
+    name: "Oreo Original Chocolate Sandwich Cookies",
+    images: "/uploads/products/oreos.png",
+    price: 14.99,
+    stock: 120,
+    category: "Snacks",
+    rating: 4.9,
+    numReviews: 200,
+    reviews: [
+      { rating: 5, comment: "Classic favorite — twist, lick, dunk!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/lays.png
+  {
+    name: "Lay's Classic Potato Chips",
+    images: "/uploads/products/lays.png",
+    price: 12.99,
+    stock: 150,
+    category: "Snacks",
+    rating: 4.6,
+    numReviews: 180,
+    reviews: [
+      { rating: 5, comment: "Betcha can't eat just one!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/trail-mix.png
+  {
+    name: "Nature's Trail Mix - Nuts & Berries",
+    images: "/uploads/products/trail-mix.png",
+    price: 22.00,
+    stock: 70,
+    category: "Snacks",
+    rating: 4.8,
+    numReviews: 65,
+    reviews: [
+      { rating: 5, comment: "Perfect healthy on-the-go snack!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/granola-bars.png
+  {
+    name: "Nature Valley Crunchy Granola Bars",
+    images: "/uploads/products/granola-bars.png",
+    price: 19.99,
+    stock: 110,
+    category: "Snacks",
+    rating: 4.5,
+    numReviews: 90,
+    reviews: [
+      { rating: 4, comment: "Great for breakfast or hiking!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/gummy-bears.png
+  {
+    name: "Haribo Gold-Bears Gummy Candy",
+    images: "/uploads/products/gummy-bears.png",
+    price: 10.99,
+    stock: 130,
+    category: "Snacks",
+    rating: 4.7,
+    numReviews: 140,
+    reviews: [
+      { rating: 5, comment: "Kid and adult favorite!", createdAt: new Date() }
+    ]
+  },
+
+  // ───────────────────────
+  // 🥛 DAIRY & EGGS (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have image for this
+  {
+    name: "Organic Cage-Free Grade A Large Brown Eggs",
+    images: "/uploads/products/organic-eggs.png",
+    price: 32.85,
+    stock: 80,
+    category: "Dairy & Eggs",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Always fresh and reliable.", createdAt: new Date() }
+    ]
+  },
+
+  // 🖼️ NEW — need image: /uploads/products/whole-milk.png
+  {
+    name: "Organic Whole Milk - 1 Gallon",
+    images: "/uploads/products/whole-milk.png",
+    price: 28.50,
+    stock: 60,
+    category: "Dairy & Eggs",
+    rating: 4.6,
+    numReviews: 75,
+    reviews: [
+      { rating: 5, comment: "Rich, creamy, and pasture-raised.", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/greek-yogurt.png
+  {
+    name: "Chobani Plain Greek Yogurt - 32oz",
+    images: "/uploads/products/greek-yogurt.png",
+    price: 34.99,
+    stock: 70,
+    category: "Dairy & Eggs",
+    rating: 4.8,
+    numReviews: 110,
+    reviews: [
+      { rating: 5, comment: "High protein and super smooth!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/butter.png
+  {
+    name: "Organic Salted Butter - 16oz",
+    images: "/uploads/products/butter.png",
+    price: 22.99,
+    stock: 50,
+    category: "Dairy & Eggs",
+    rating: 4.7,
+    numReviews: 60,
+    reviews: [
+      { rating: 5, comment: "Perfect for baking and toast!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/cheddar.png
+  {
+    name: "Aged Sharp Cheddar Block",
+    images: "/uploads/products/cheddar.png",
+    price: 26.50,
+    stock: 45,
+    category: "Dairy & Eggs",
+    rating: 4.9,
+    numReviews: 50,
+    reviews: [
+      { rating: 5, comment: "Bold, sharp, and melts perfectly!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/cottage-cheese.png
+  {
+    name: "Organic Low-Fat Cottage Cheese",
+    images: "/uploads/products/cottage-cheese.png",
+    price: 19.99,
+    stock: 55,
+    category: "Dairy & Eggs",
+    rating: 4.4,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Great for high-protein meals.", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/sour-cream.png
+  {
+    name: "Organic Sour Cream - 16oz",
+    images: "/uploads/products/sour-cream.png",
+    price: 15.50,
+    stock: 65,
+    category: "Dairy & Eggs",
+    rating: 4.6,
+    numReviews: 35,
+    reviews: [
+      { rating: 5, comment: "Perfect for tacos and baked potatoes.", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/eggs-dozen.png
+  {
+    name: "Farm Fresh Large White Eggs - Dozen",
+    images: "/uploads/products/eggs-dozen.png",
+    price: 29.99,
+    stock: 75,
+    category: "Dairy & Eggs",
+    rating: 4.8,
+    numReviews: 80,
+    reviews: [
+      { rating: 5, comment: "Bright yolks and strong shells!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/cream-cheese.png
+  {
+    name: "Philadelphia Original Cream Cheese",
+    images: "/uploads/products/cream-cheese.png",
+    price: 24.99,
+    stock: 90,
+    category: "Dairy & Eggs",
+    rating: 4.7,
+    numReviews: 95,
+    reviews: [
+      { rating: 5, comment: "Classic for bagels and cheesecake!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/whipping-cream.png
+  {
+    name: "Organic Heavy Whipping Cream",
+    images: "/uploads/products/whipping-cream.png",
+    price: 21.50,
+    stock: 50,
+    category: "Dairy & Eggs",
+    rating: 4.8,
+    numReviews: 45,
+    reviews: [
+      { rating: 5, comment: "Whips perfectly every time!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/mozzarella.png
+  {
+    name: "Fresh Mozzarella Ball",
+    images: "/uploads/products/mozzarella.png",
+    price: 18.99,
+    stock: 40,
+    category: "Dairy & Eggs",
+    rating: 4.9,
+    numReviews: 30,
+    reviews: [
+      { rating: 5, comment: "Perfect caprese salad essential!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/yogurt-pack.png
+  {
+    name: "Yoplait Original Strawberry Yogurt - 8 Pack",
+    images: "/uploads/products/yogurt-pack.png",
+    price: 36.99,
+    stock: 80,
+    category: "Dairy & Eggs",
+    rating: 4.5,
+    numReviews: 70,
+    reviews: [
+      { rating: 5, comment: "Kid favorite lunchbox staple!", createdAt: new Date() }
+    ]
+  },
+
+  // ───────────────────────
+  // 🥖 BAKERY (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have images for these
+  {
+    name: "Delicious white baked fresh bread and toast",
+    images: "/uploads/products/fresh-bread.png",
+    price: 20.00,
+    stock: 100,
+    category: "Bakery",
+    rating: 5.0,
+    numReviews: 50,
+    reviews: [
+      { rating: 5, comment: "Soft and buttery — amazing toasted!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Pepperidge Farm Farmhouse Hearty White Bread",
+    images: "/uploads/products/pepperidge-bread.png",
+    price: 32.85,
+    stock: 60,
+    category: "Bakery",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 4, comment: "Classic taste, great for sandwiches.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Oroweat Country Buttermilk Bread",
+    images: "/uploads/products/oroweat-bread.png",
+    price: 32.85,
+    stock: 60,
+    category: "Bakery",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Soft, buttery, and slightly sweet.", createdAt: new Date() }
+    ]
+  },
+
+  // 🖼️ NEW — need image: /uploads/products/bagels.png
+  {
+    name: "Thomas' Plain Bagels - 6 Pack",
+    images: "/uploads/products/bagels.png",
+    price: 26.99,
+    stock: 70,
+    category: "Bakery",
+    rating: 4.8,
+    numReviews: 90,
+    reviews: [
+      { rating: 5, comment: "Chewy, classic, and perfect with cream cheese!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/croissants.png
+  {
+    name: "Freshly Baked Butter Croissants",
+    images: "/uploads/products/croissants.png",
+    price: 29.99,
+    stock: 40,
+    category: "Bakery",
+    rating: 4.9,
+    numReviews: 60,
+    reviews: [
+      { rating: 5, comment: "Flaky, buttery, and heavenly!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/muffins.png
+  {
+    name: "Blueberry Muffins - 4 Pack",
+    images: "/uploads/products/muffins.png",
+    price: 24.50,
+    stock: 50,
+    category: "Bakery",
+    rating: 4.7,
+    numReviews: 55,
+    reviews: [
+      { rating: 5, comment: "Moist with bursting blueberries!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/sourdough.png
+  {
+    name: "Artisan Sourdough Loaf",
+    images: "/uploads/products/sourdough.png",
+    price: 34.99,
+    stock: 30,
+    category: "Bakery",
+    rating: 4.9,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Tangy crust, chewy inside — bakery quality!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/whole-wheat.png
+  {
+    name: "100% Whole Wheat Bread",
+    images: "/uploads/products/whole-wheat.png",
+    price: 22.99,
+    stock: 60,
+    category: "Bakery",
+    rating: 4.5,
+    numReviews: 50,
+    reviews: [
+      { rating: 4, comment: "Healthy, hearty, and great for sandwiches.", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/cinnamon-rolls.png
+  {
+    name: "Pillsbury Cinnamon Rolls with Icing",
+    images: "/uploads/products/cinnamon-rolls.png",
+    price: 28.50,
+    stock: 80,
+    category: "Bakery",
+    rating: 4.8,
+    numReviews: 100,
+    reviews: [
+      { rating: 5, comment: "Warm, gooey, and perfect for breakfast!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/donuts.png
+  {
+    name: "Assorted Glazed Donuts - 6 Pack",
+    images: "/uploads/products/donuts.png",
+    price: 19.99,
+    stock: 45,
+    category: "Bakery",
+    rating: 4.6,
+    numReviews: 70,
+    reviews: [
+      { rating: 5, comment: "Fresh and delicious — kids love them!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/naan.png
+  {
+    name: "Tandoori Plain Naan Bread - 8 Pack",
+    images: "/uploads/products/naan.png",
+    price: 31.50,
+    stock: 50,
+    category: "Bakery",
+    rating: 4.7,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Soft and perfect with curries!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/pita.png
+  {
+    name: "Fresh Whole Wheat Pita Bread - 10 Pack",
+    images: "/uploads/products/pita.png",
+    price: 25.99,
+    stock: 65,
+    category: "Bakery",
+    rating: 4.6,
+    numReviews: 35,
+    reviews: [
+      { rating: 5, comment: "Great for sandwiches and hummus!", createdAt: new Date() }
+    ]
+  },
+
+  // ───────────────────────
+  // 🥤 BEVERAGES (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have images for these
+  {
+    name: "Canada Dry Ginger Ale - 2L Bottle",
+    images: "/uploads/products/canada-dry-ginger-ale.png",
+    price: 32.85,
+    stock: 90,
+    category: "Beverages",
+    rating: 4.4,
+    numReviews: 55,
+    reviews: [
+      { rating: 5, comment: "Classic ginger flavor!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Canada Dry - 2L Bottle",
+    images: "/uploads/products/canada-dry.jpg",
+    price: 42.95,
+    stock: 80,
+    category: "Beverages",
+    rating: 3.9,
+    numReviews: 55,
+    reviews: [
+      { rating: 5, comment: "Hits the spot for me.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Nestle Original Coffee-Mate Coffee Creamer",
+    images: "/uploads/products/coffee-creamer.png",
+    price: 32.85,
+    stock: 100,
+    category: "Beverages",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 4, comment: "Smooths out my coffee perfectly.", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Naturally Flavored Cinnamon Vanilla Light Roast Coffee",
+    images: "/uploads/products/cinnamon-coffee.png",
+    price: 32.85,
+    stock: 50,
+    category: "Beverages",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 4, comment: "Warm and comforting flavor.", createdAt: new Date() }
+    ]
+  },
+
+  // 🖼️ NEW — need image: /uploads/products/orange-juice.png
+  {
+    name: "Tropicana Pure Premium Orange Juice - 64oz",
+    images: "/uploads/products/orange-juice.png",
+    price: 38.99,
+    stock: 70,
+    category: "Beverages",
+    rating: 4.8,
+    numReviews: 90,
+    reviews: [
+      { rating: 5, comment: "Fresh-squeezed taste every time!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/sprite.png
+  {
+    name: "Sprite Lemon-Lime Soda - 2L",
+    images: "/uploads/products/sprite.png",
+    price: 29.99,
+    stock: 100,
+    category: "Beverages",
+    rating: 4.5,
+    numReviews: 80,
+    reviews: [
+      { rating: 5, comment: "Crisp, clean, and refreshing!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/coca-cola.png
+  {
+    name: "Coca-Cola Classic - 2L",
+    images: "/uploads/products/coca-cola.png",
+    price: 29.99,
+    stock: 120,
+    category: "Beverages",
+    rating: 4.9,
+    numReviews: 200,
+    reviews: [
+      { rating: 5, comment: "Timeless classic — ice cold perfection!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/pepsi.png
+  {
+    name: "Pepsi Cola - 2L",
+    images: "/uploads/products/pepsi.png",
+    price: 29.50,
+    stock: 110,
+    category: "Beverages",
+    rating: 4.6,
+    numReviews: 180,
+    reviews: [
+      { rating: 5, comment: "Bold and refreshing!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/bottled-water.png
+  {
+    name: "Essentia Ionized Alkaline Water - 33.8oz",
+    images: "/uploads/products/bottled-water.png",
+    price: 24.99,
+    stock: 150,
+    category: "Beverages",
+    rating: 4.7,
+    numReviews: 120,
+    reviews: [
+      { rating: 5, comment: "Smooth, clean, and hydrating!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/gatorade.png
+  {
+    name: "Gatorade Thirst Quencher - Cool Blue - 32oz",
+    images: "/uploads/products/gatorade.png",
+    price: 21.99,
+    stock: 90,
+    category: "Beverages",
+    rating: 4.6,
+    numReviews: 100,
+    reviews: [
+      { rating: 5, comment: "Great for rehydration after workouts!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/iced-tea.png
+  {
+    name: "Lipton Iced Tea - Lemon - 64oz",
+    images: "/uploads/products/iced-tea.png",
+    price: 32.50,
+    stock: 80,
+    category: "Beverages",
+    rating: 4.4,
+    numReviews: 70,
+    reviews: [
+      { rating: 4, comment: "Refreshing and not too sweet.", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/almond-milk.png
+  {
+    name: "Almond Breeze Unsweetened Almond Milk",
+    images: "/uploads/products/almond-milk.png",
+    price: 26.99,
+    stock: 60,
+    category: "Beverages",
+    rating: 4.5,
+    numReviews: 85,
+    reviews: [
+      { rating: 5, comment: "Creamy and dairy-free!", createdAt: new Date() }
+    ]
+  },
+
+  // ───────────────────────
+  // ❄️ FROZEN (12+ items)
+  // ───────────────────────
+  // ✅ You ALREADY have image for this
+  {
+    name: "Gorton's Beer Battered Fish Fillets with soft paper",
+    images: "/uploads/products/gortons-fish.png",
+    price: 25.85,
+    stock: 40,
+    category: "Frozen",
+    rating: 4.2,
+    numReviews: 35,
+    reviews: [
+      { rating: 4, comment: "Crispy outside, tender inside!", createdAt: new Date() }
+    ]
+  },
+  {
+    name: "Organic Frozen Triple Berry Blend",
+    images: "/uploads/products/triple-berry.png",
+    price: 32.85,
+    stock: 70,
+    category: "Frozen",
+    rating: 4.0,
+    numReviews: 40,
+    reviews: [
+      { rating: 5, comment: "Great for smoothies!", createdAt: new Date() }
+    ]
+  },
+
+  // 🖼️ NEW — need image: /uploads/products/ice-cream.png
+  {
+    name: "Ben & Jerry's Chocolate Fudge Brownie Ice Cream",
+    images: "/uploads/products/ice-cream.png",
+    price: 42.99,
+    stock: 50,
+    category: "Frozen",
+    rating: 4.9,
+    numReviews: 150,
+    reviews: [
+      { rating: 5, comment: "Rich, fudgy, and indulgent!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-pizza.png
+  {
+    name: "DiGiorno Rising Crust Pepperoni Pizza",
+    images: "/uploads/products/frozen-pizza.png",
+    price: 36.50,
+    stock: 60,
+    category: "Frozen",
+    rating: 4.7,
+    numReviews: 120,
+    reviews: [
+      { rating: 5, comment: "Tastes like delivery — easy and tasty!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/vegetable-mix.png
+  {
+    name: "Birds Eye Steamfresh Vegetable Medley",
+    images: "/uploads/products/vegetable-mix.png",
+    price: 18.99,
+    stock: 80,
+    category: "Frozen",
+    rating: 4.5,
+    numReviews: 90,
+    reviews: [
+      { rating: 5, comment: "Quick, healthy, and tasty!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-chicken-nuggets.png
+  {
+    name: "Tyson Fully Cooked Chicken Nuggets",
+    images: "/uploads/products/frozen-chicken-nuggets.png",
+    price: 28.50,
+    stock: 70,
+    category: "Frozen",
+    rating: 4.6,
+    numReviews: 100,
+    reviews: [
+      { rating: 5, comment: "Kid-approved and ready in minutes!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-waffles.png
+  {
+    name: "Eggo Homestyle Waffles - 10 Pack",
+    images: "/uploads/products/frozen-waffles.png",
+    price: 22.99,
+    stock: 90,
+    category: "Frozen",
+    rating: 4.8,
+    numReviews: 110,
+    reviews: [
+      { rating: 5, comment: "Perfect crispy breakfast in minutes!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-shrimp.png
+  {
+    name: "Frozen Raw Jumbo Shrimp - 1lb",
+    images: "/uploads/products/frozen-shrimp.png",
+    price: 45.99,
+    stock: 40,
+    category: "Frozen",
+    rating: 4.7,
+    numReviews: 60,
+    reviews: [
+      { rating: 5, comment: "Restaurant quality at home!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-burritos.png
+  {
+    name: "Amy's Bean & Cheese Burrito - 4 Pack",
+    images: "/uploads/products/frozen-burritos.png",
+    price: 34.50,
+    stock: 50,
+    category: "Frozen",
+    rating: 4.6,
+    numReviews: 75,
+    reviews: [
+      { rating: 4, comment: "Healthy, organic, and tasty!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-berries.png
+  {
+    name: "Organic Frozen Strawberries - 32oz",
+    images: "/uploads/products/frozen-berries.png",
+    price: 26.99,
+    stock: 65,
+    category: "Frozen",
+    rating: 4.8,
+    numReviews: 80,
+    reviews: [
+      { rating: 5, comment: "Perfect for smoothies and desserts!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-french-fries.png
+  {
+    name: "Ore-Ida Golden Crinkles French Fries",
+    images: "/uploads/products/frozen-french-fries.png",
+    price: 19.50,
+    stock: 100,
+    category: "Frozen",
+    rating: 4.5,
+    numReviews: 95,
+    reviews: [
+      { rating: 5, comment: "Crispy, salty, and delicious!", createdAt: new Date() }
+    ]
+  },
+  // 🖼️ NEW — need image: /uploads/products/frozen-sausage-links.png
+  {
+    name: "Johnsonville Fully Cooked Sausage Links",
+    images: "/uploads/products/frozen-sausage-links.png",
+    price: 31.99,
+    stock: 55,
+    category: "Frozen",
+    rating: 4.7,
+    numReviews: 70,
+    reviews: [
+      { rating: 5, comment: "Hearty breakfast in minutes!", createdAt: new Date() }
+    ]
+  }
+];
+
+export default products;
