@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from sqlalchemy import text
+from starlette.staticfiles import StaticFiles
+
 from db import engine, Base
 from routers.product import router as products_router
 from auth import create_access_token
@@ -13,6 +15,7 @@ limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI()
 app.state.limiter = limiter
+app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 # Register product router
 app.include_router(products_router)
