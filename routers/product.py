@@ -27,10 +27,34 @@ def require_token(authorization: str = Header(...)):
     token = authorization.split(" ")[1]
     payload = verify_token(token)
 
+    if payload.get("scope") != "read":
+        raise HTTPException(status_code=403, detail="Insufficient permissions")
+
     if not payload:
         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
     return payload
+
+from fastapi import HTTPException
+
+@router.get("/{product_id}")
+def get_product(
+    product_id: int,
+    db: Session = Depends(get_db),
+    _: dict = Depends(require_token)
+):
+    product = (
+        db.query(Product)
+        .filter(Product.id == product_id)
+        .first()
+    )
+
+    if not product:
+        raise HTTPException(status_code=404, detail="Product not found")
+
+    return product
+
+
 
 
 @router.get("/")
