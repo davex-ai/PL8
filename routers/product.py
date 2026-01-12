@@ -54,16 +54,24 @@ def get_product(
 
     return product
 
+@router.get("/categories/all")
+def get_categories(
+    db: Session = Depends(get_db),
+    _: dict = Depends(require_token)
+):
+    categories = db.query(Category).all()
+    return categories
 
 
 
 @router.get("/")
 @limiter.limit("10/minute")
 def get_products(
-    request: Request,                 # 👈 REQUIRED FOR SLOWAPI
+    request: Request,
     page: int = Query(1, ge=1),
     limit: int = Query(10, le=50),
     category: Optional[str] = None,
+    search: Optional[str] = None,
     min_price: Optional[float] = None,
     max_price: Optional[float] = None,
     db: Session = Depends(get_db),
@@ -79,6 +87,9 @@ def get_products(
 
     if max_price is not None:
         query = query.filter(Product.price <= max_price)
+
+    if search:
+        query = query.filter(Product.name.ilike(f"%{search}%"))
 
     total = query.count()
 
